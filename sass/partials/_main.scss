@@ -1,0 +1,374 @@
+@use "variables" as*;
+
+main {
+    /*Estilos Generales*/
+    h1 {
+        font-family: $font;
+        font-size: 5em;
+        color: $negro;
+        text-shadow: $rosa 2px 2px 2px;
+    }
+ 
+    
+    h2 {
+        font-family: $font;
+        font-size: 3em;
+        color: $negro;
+        text-shadow: $rosa 2px 2px 2px;
+    }
+
+    h3 {
+        font-family: $font;
+        font-size: 3em;
+        color: $negro;
+        text-shadow: $rosa 2px 2px 2px;
+    }
+
+    h4 {
+        font-family: $font;
+        font-size: 3em;
+        color: $negro;
+        text-shadow: $rosa 2px 2px 2px;
+    }
+
+    h5 {
+        font-family: $font;
+        font-size: 3em;
+        color: $negro;
+        text-shadow: $rosa 2px 2px 2px;
+    }
+
+    h6 {
+        font-family: $font;
+        font-size: 3em;
+        color: $negro;
+        text-shadow: $rosa 2px 2px 2px;
+    }
+    
+    .primer-titulo {
+        text-align: center;
+    }
+
+    .segundo-titulo {
+        text-align: center;
+    }
+
+    .tercer-titulo {
+        text-align: center;
+    }
+
+    .cuarto-titulo {
+        text-align: center;
+    }
+    
+    p {
+        font-family: $font;
+        font-size: 1.5em;
+        color: $negro;     
+    }  
+    
+
+    .bienvenida-pagina {
+        text-align: center;
+        margin-inline-start: 250px;
+        margin-inline-end: 350px;
+        font-family: $font;
+        font-size: 1.5em;
+        color: $negro;     
+        margin: 20px auto;
+        max-width: 800px;
+    }
+    .rubro-pagina {
+        text-align: center;
+        margin-inline-start: 250px;
+        margin-inline-end: 350px;
+        font-family: $font;
+        font-size: 1.5em;
+        color:  $negro;     
+        margin: 20px auto;
+        max-width: 800px;
+    }
+
+    .explicacion-titulo {
+        text-align: center;
+        margin-inline-start: 250px;
+        margin-inline-end: 350px;
+        font-family: $font;
+        font-size: 1.5em;
+        color: $negro;     
+        margin: 20px auto;
+        max-width: 800px;
+    }
+
+    .lista-servicios { 
+        text-align: center;
+        font-family: $font;
+        list-style-position: inside;
+        font-size: 1.5em;
+        color: $negro;     
+        margin: 20px auto;
+        max-width: 800px;
+    }
+    
+    img {
+        width: 75%;
+        height: 75%;
+        margin: 2px;
+        border: $fucsia 10px groove;
+        border-radius: 50px; 
+    }
+
+/* ------------------------------------Estilos para Grid----------------------------------------------*/
+/*-------------Página de tratamientos----------------------------*/
+
+    .contenedor {
+        display: grid;
+        grid-template-areas: 
+            "titulo titulo titulo"
+            "foto1  foto2  foto3"
+            "texto1 texto1 texto1"
+            "titulo2 titulo2 titulo2"
+            "texto2  texto2  texto2"
+            "lista1 lista1 lista1"
+            "titulo3 titulo3 titulo3"
+            "foto4  texto3  texto3"
+            "lista2 lista2 lista2"
+            "titulo4 titulo4 titulo4"
+            "foto5  texto4  texto4"
+            "lista3 lista3 lista3"
+            "titulo5 titulo5 titulo5"
+            "foto6  texto6  texto6"
+            "lista4 lista4 lista4"
+            "titulo6 titulo6 titulo6"
+            "texto7 texto7 texto7";
+
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 22px;
+        
+        .contenedor img {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            height: 100%;
+            border: $fucsia 10px groove;
+            border-radius: 50px;    
+            }
+       
+        .titulo {
+            grid-area: titulo;
+            text-align: center;
+            }
+        .titulo2 {
+            grid-area: titulo2;
+            text-align: center;
+            }
+        .titulo3 {
+            grid-area: titulo3;
+            text-align: center;
+            }
+        .titulo4 {
+            grid-area: titulo4;
+            text-align: center;
+            }
+        .titulo5 {
+            grid-area: titulo5;
+            text-align: center;
+            }
+        .titulo6 {
+            grid-area: titulo6;
+            text-align: center;
+            }
+        .foto1 {
+            grid-area: foto1;
+            }
+        .foto2 {
+            grid-area: foto2;
+            }
+        .foto3 {
+            grid-area: foto3;   
+            }
+        .foto4 {
+            grid-area: foto4;   
+            }
+        .foto5 {
+            grid-area: foto5;  
+            }
+        .foto6 {
+            grid-area: foto6; 
+            }
+        .texto1 {
+            grid-area: texto1;
+            font-family: $font;      
+            }
+        .texto2 {
+            grid-area: texto2;
+            text-align: center;
+            font-family: $font;
+            margin-inline-start: 250px;
+            margin-inline-end: 250px;
+            margin: 20px auto;
+            max-width: 800px;
+            }
+        .texto3 {
+            grid-area: texto3;
+            text-align: center;
+            font-family: $font;
+            margin-inline-start: 250px;
+            margin-inline-end: 250px;
+            margin: 20px auto;
+            max-width: 800px;   
+            }
+        .texto4 {
+            grid-area: texto4;
+            font-family: $font;
+            margin-inline-start: 250px;
+            margin-inline-end: 250px;
+            margin: 20px auto;
+            max-width: 800px;
+            }
+        .texto5 {
+            grid-area: texto5;
+            font-family: $font;
+            margin-inline-start: 250px;
+            margin-inline-end: 250px;
+            margin: 20px auto;
+            max-width: 800px;
+            }
+        .texto6 {
+            grid-area: texto6;
+            text-align: center;
+            font-family: $font;
+            margin-inline-start: 250px;
+            margin-inline-end: 250px;
+            margin: 20px auto;
+            max-width: 800px;
+            }
+        .texto7 {
+            grid-area: texto7;
+            text-align: center;
+            font-family: $font;
+            margin-inline-start: 250px;
+            margin-inline-end: 250px;
+            margin: 20px auto;
+            max-width: 800px;
+            }
+        .lista1 {
+            grid-area: lista1;
+            font-size: 1.5em;   
+            font-family: $font; 
+            list-style: none; 
+            margin-inline-start: 250px;
+            margin-inline-end: 250px;
+            margin: 20px auto;
+            max-width: 800px;
+            }
+        .lista2 {
+            grid-area: lista2;
+            font-size: 1.5em;   
+            font-family: $font;  
+            list-style: none;
+            }
+        .lista3 {
+            grid-area: lista3;
+            font-size: 1.5em;   
+            font-family: $font;  
+            list-style: none;
+            }
+        .lista4 {
+            grid-area: lista4;
+            font-size: 1.5em;   
+            font-family: $font;  
+            list-style: none;
+            }
+
+        .color1 {
+            color: yellow;
+            }
+        .color2 {
+            color: green;
+            }
+        .color3 {
+            color: blue;
+            }
+        .color4 {
+            color: red;
+            }
+    }
+
+/*------------------Página Productos-----------------*/
+   .contenedor2 {
+        display: grid;
+        grid-template-areas: 
+            "titulop titulop titulop"
+            "fotop textop textop"
+            "fotop2 textop2 textop2"
+            "fotop3 textop3 textop3"
+            "fotop4 textop4 textop4";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 22px;
+    
+        .contenedor2 img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            height: 80%;
+            border: $fucsia 10px groove;
+            border-radius: 50px;        
+            }
+        .titolop {
+            grid-area: titulop;
+            text-align: center;
+            }
+        .fotop {
+            grid-area: fotop;
+            }
+        .fotop2 {
+            grid-area: fotop2;
+            }
+        .fotop3 {
+            grid-area: fotop3;
+            }
+        .fotop4 {
+            grid-area: fotop4;
+            }
+        .textop {
+            grid-area: textop;
+            text-align: center;
+            font-family: $font;
+            margin-inline-start: 250px;
+            margin-inline-end: 250px;
+            margin: 20px auto;
+            max-width: 800px;
+            }
+        .textop2 {
+            grid-area: textop2;
+            text-align: center;
+            font-family: $font;
+            margin-inline-start: 250px;
+            margin-inline-end: 250px;
+            margin: 20px auto;
+            max-width: 800px;
+            }
+        .textop3 {
+            grid-area: textop3;
+            text-align: center;
+            font-family: $font;
+            margin-inline-start: 250px;
+            margin-inline-end: 250px;
+            margin: 20px auto;
+            max-width: 800px;        
+            }
+        .textop4 {
+            grid-area: textop4;
+            font-family: $font;
+            margin-inline-start: 250px;
+            margin-inline-end: 250px;
+            margin: 20px auto;
+            max-width: 800px;
+            }
+   }
+}

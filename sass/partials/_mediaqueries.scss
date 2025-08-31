@@ -1,0 +1,215 @@
+@use "variables" as*;
+
+/*--------------------------------------Media Queries--------------------------------------------------*/
+/* Media queries para pantallas pequeñas */
+@media only screen and (max-width:480px) {
+    body {
+        background-color: lightgoldenrodyellow;
+        }
+    header {
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+
+    nav {
+        text-align: center;
+        font-size: 1.2em;
+        font-size: small;
+        }
+    .navbar a {
+        font-size: small;
+        }
+    footer {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: small;
+        font-size: 1.2em;
+            p {
+                font-size: 1em;
+                }
+        }
+   
+    
+    .bienvenida-pagina, .rubro-pagina, .explicacion-titulo, .lista-servicios,
+    .texto1, .texto2, .texto3, .texto4, .texto6, .texto7, .textop, .textop2, 
+    .textop3, .textop4, .lista1, .lista2, .lista3, .lista4 {
+        margin-inline-start: 20px;
+        margin-inline-end: 20px;
+        font-size: 1em !important;
+        }
+
+    .titulo, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6, .titulop {
+        font-size: 1.2em;
+        }
+
+    img {
+            width: 50% !important;
+            height: auto;
+        }
+    main h1, main h2, main h3, main h4, main h5, main h6 {
+        font-size: 1.2em;
+        margin-top: 80px;
+        
+        }
+
+    .contenedor {
+        grid-template-areas: 
+            "titulo"
+            "foto1"
+            "foto2"
+            "foto3"
+            "texto1"
+            "titulo2"
+            "texto2"
+            "lista1"
+            "titulo3"
+            "foto4"
+            "texto3"
+            "lista2"
+            "titulo4"
+            "foto5"
+            "texto4"
+            "lista3"
+            "titulo5"
+            "foto6"
+            "texto6"
+            "lista4"
+            "titulo6"
+            "texto7" !important;
+        }
+
+    .contenedor img {
+        width: 20% 30% 30% 30%;
+        height: auto;
+        border-radius: 20px;
+        }
+    .contenedor2 {
+        grid-template-areas: 
+            "titulop"
+            "fotop"
+            "textop"
+            "fotop2"
+            "textop2"
+            "fotop3"
+            "textop3"
+            "fotop4"
+            "textop4" !important;
+        }
+    .contenedor2 img {
+        width: 20% 30% 30% 30%;
+        height: auto;
+        border-radius: 20px;
+        }
+    
+    footer {
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+            p {
+                font-size: 1em;
+            }
+    }
+    
+
+}
+
+/* Media queries para pantallas medianas */
+@media only screen and (min-width:481px) and (max-width:978px) {
+    body {
+        background-color: lightblue;
+        }
+    header {
+        height: 100%;
+        background-size: cover;
+        background-position:center;     
+        }
+    nav {
+        text-align: center;
+        font-size: 1.8em;
+        }
+    .navbar a {
+        font-size: large;
+        }
+    footer {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: small;
+        font-size: 1.4em;
+            p {
+                font-size: 1.2em;
+                }
+        }
+   
+    
+    .bienvenida-pagina, .rubro-pagina, .explicacion-titulo, .lista-servicios,
+    .texto1, .texto2, .texto3, .texto4, .texto6, .texto7, .textop, .textop2, 
+    .textop3, .textop4, .lista1, .lista2, .lista3, .lista4 {
+        margin-inline-start: 20px;
+        margin-inline-end: 20px;
+        font-size: 1.4em !important;
+        }
+
+    .titulo, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6, .titulop {
+        font-size: 1.8em;
+        }
+
+    img {
+            width: 80% !important;
+            height: auto;
+        }
+    main h1, main h2, main h3, main h4, main h5, main h6 {
+        font-size: 1.8em;
+        margin-top: 80px;
+        }
+   
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "titulo titulo titulo"
+            "foto1 foto2 foto3"
+            "texto1 texto1 texto1"
+            "titulo2 titulo2 titulo2"
+            "texto2 texto2 texto2"
+            "lista1 lista1 lista1"
+            "titulo3 titulo3 titulo3"
+            "foto4 texto3 texto3"
+            "lista2 lista2 lista2"
+            "titulo4 titulo4 titulo4"
+            "foto5 texto4 texto4"
+            "lista3 lista3 lista3"
+            "titulo5 titulo5 titulo5"
+            "foto6 texto6 texto6"
+            "lista4 lista4 lista4"
+            "titulo6 titulo6 titulo6"
+            "texto7 texto7 texto7" !important;
+        }
+    .contenedor img {
+        width: 50%;
+        height: auto;
+        border-radius: 20px;
+        }
+    .contenedor2 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titulop"
+            "fotop  texop"
+            "fotop2 textop2"
+            "fotop3 textop3"
+            "fotop4 textop4";
+
+        }
+}
+/* Media queries para pantallas grandes */
+@media only screen and (min-width:979px) {
+    body {
+        background-color: rgb(238, 233, 226);
+        }
+   
+}
+    
+    
