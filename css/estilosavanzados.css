@@ -11,7 +11,7 @@ header {
 }
 header nav {
   position: relative;
-  bottom: 30px;
+  bottom: 305px;
   padding: 1px;
   text-align: right;
   font-family: monotype corsiva;
@@ -37,17 +37,17 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 30vh;
+  height: 20vh;
   font-family: #b36093;
   font-size: 1.5em;
 }
 
-/* main {
-  Estilos Generales
-  ------------------------------------Estilos para Grid----------------------------------------------
-  -------------Página de tratamientos----------------------------
-  ------------------Página Productos-----------------
-} */
+main {
+  /*Estilos Generales*/
+  /* ------------------------------------Estilos para Grid----------------------------------------------*/
+  /*-------------Página de tratamientos----------------------------*/
+  /*------------------Página Productos-----------------*/
+}
 main h1 {
   font-family: monotype corsiva;
   font-size: 5em;
@@ -85,18 +85,28 @@ main h6 {
   text-shadow: #df90c7 2px 2px 2px;
 }
 main .primer-titulo {
+  position: relative;
+  top: 30px;
   text-align: center;
 }
 main .segundo-titulo {
+  position: relative;
+  top: 30px;
   text-align: center;
 }
 main .tercer-titulo {
+  position: relative;
+  top: 30px;
   text-align: center;
 }
 main .cuarto-titulo {
+  position: relative;
+  top: 30px;
   text-align: center;
 }
 main p {
+  position: relative;
+  top: 30px;
   font-family: monotype corsiva;
   font-size: 1.5em;
   color: #555;
@@ -122,6 +132,8 @@ main .rubro-pagina {
   max-width: 800px;
 }
 main .explicacion-titulo {
+  position: relative;
+  top: 55px;
   text-align: center;
   margin-inline-start: 250px;
   margin-inline-end: 350px;
@@ -132,6 +144,8 @@ main .explicacion-titulo {
   max-width: 800px;
 }
 main .lista-servicios {
+  position: relative;
+  top: 30px;
   text-align: center;
   font-family: monotype corsiva;
   list-style-position: inside;
@@ -164,10 +178,14 @@ main .contenedor .contenedor img {
   border-radius: 50px;
 }
 main .contenedor .titulo {
+  position: relative;
+  top: 50px;
   grid-area: titulo;
   text-align: center;
 }
 main .contenedor .titulo2 {
+  position: relative;
+  top: 50px;
   grid-area: titulo2;
   text-align: center;
 }
@@ -188,12 +206,18 @@ main .contenedor .titulo6 {
   text-align: center;
 }
 main .contenedor .foto1 {
+  position: relative;
+  top: 30px;
   grid-area: foto1;
 }
 main .contenedor .foto2 {
+  position: relative;
+  top: 30px;
   grid-area: foto2;
 }
 main .contenedor .foto3 {
+  position: relative;
+  top: 30px;
   grid-area: foto3;
 }
 main .contenedor .foto4 {
@@ -206,10 +230,14 @@ main .contenedor .foto6 {
   grid-area: foto6;
 }
 main .contenedor .texto1 {
+  position: relative;
+  top: 30px;
   grid-area: texto1;
   font-family: monotype corsiva;
 }
 main .contenedor .texto2 {
+  position: relative;
+  top: 30px;
   grid-area: texto2;
   text-align: center;
   font-family: monotype corsiva;
@@ -219,6 +247,8 @@ main .contenedor .texto2 {
   max-width: 800px;
 }
 main .contenedor .texto3 {
+  position: relative;
+  top: 30px;
   grid-area: texto3;
   text-align: center;
   font-family: monotype corsiva;
@@ -253,6 +283,8 @@ main .contenedor .texto6 {
   max-width: 800px;
 }
 main .contenedor .texto7 {
+  position: relative;
+  top: 30px;
   grid-area: texto7;
   text-align: center;
   font-family: monotype corsiva;
@@ -317,10 +349,6 @@ main .contenedor2 .contenedor2 img {
   border: #6b395c 10px groove;
   border-radius: 50px;
 }
-main .contenedor2 .titolop {
-  grid-area: titulop;
-  text-align: center;
-}
 main .contenedor2 .fotop {
   grid-area: fotop;
 }
@@ -332,6 +360,12 @@ main .contenedor2 .fotop3 {
 }
 main .contenedor2 .fotop4 {
   grid-area: fotop4;
+}
+main .contenedor2 .titolop {
+  position: relative;
+  top: 50px;
+  grid-area: titulop;
+  text-align: center;
 }
 main .contenedor2 .textop {
   grid-area: textop;
@@ -369,6 +403,28 @@ main .contenedor2 .textop4 {
   max-width: 800px;
 }
 
+.animacion {
+  border-radius: color #6b395c 10px groove;
+}
+
+.animacion:hover .contenedor2 img {
+  border: #6b395c 10px groove;
+  border-radius: 50px;
+  position: relative;
+  animation: zoomIn 3s ease-in-out;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /*--------------------------------------Media Queries--------------------------------------------------*/
 /* Media queries para pantallas pequeñas */
 @media only screen and (max-width: 480px) {
@@ -387,6 +443,9 @@ main .contenedor2 .textop4 {
     font-size: small;
   }
   .navbar a {
+    display: flex;
+    position: relative;
+    top: 250px;
     font-size: small;
   }
   footer {
@@ -402,11 +461,27 @@ main .contenedor2 .textop4 {
   .bienvenida-pagina, .rubro-pagina, .explicacion-titulo, .lista-servicios,
   .texto1, .texto2, .texto3, .texto4, .texto6, .texto7, .textop, .textop2,
   .textop3, .textop4, .lista1, .lista2, .lista3, .lista4 {
+    position: relative;
+    top: 10px !important;
     margin-inline-start: 20px;
     margin-inline-end: 20px;
     font-size: 1em !important;
   }
-  .titulo, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6, .titulop {
+  .primer-titulo, .segundo-titulo, .tercer-titulo, .cuarto-titulo {
+    position: relative;
+    top: 30px !important;
+    font-size: 1.5em !important;
+    position: relative;
+    top: 30px;
+  }
+  .titulo, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6 {
+    position: relative;
+    top: 30px !important;
+    font-size: 1.2em;
+  }
+  .titolop {
+    position: relative;
+    top: 30px !important;
     font-size: 1.2em;
   }
   img {
@@ -438,6 +513,8 @@ main .contenedor2 .textop4 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-size: x-small;
+    font-size: 1em;
   }
   footer p {
     font-size: 1em;
@@ -458,6 +535,9 @@ main .contenedor2 .textop4 {
     font-size: 1.8em;
   }
   .navbar a {
+    display: flex;
+    position: relative;
+    top: 250px;
     font-size: large;
   }
   footer {
@@ -465,7 +545,7 @@ main .contenedor2 .textop4 {
     background-position: center;
     background-repeat: no-repeat;
     font-size: small;
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   footer p {
     font-size: 1.2em;
@@ -473,11 +553,15 @@ main .contenedor2 .textop4 {
   .bienvenida-pagina, .rubro-pagina, .explicacion-titulo, .lista-servicios,
   .texto1, .texto2, .texto3, .texto4, .texto6, .texto7, .textop, .textop2,
   .textop3, .textop4, .lista1, .lista2, .lista3, .lista4 {
+    position: relative;
+    top: 10px !important;
     margin-inline-start: 20px;
     margin-inline-end: 20px;
     font-size: 1.4em !important;
   }
   .titulo, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6, .titulop {
+    position: relative;
+    top: 30px !important;
     font-size: 1.8em;
   }
   img {
@@ -503,9 +587,26 @@ main .contenedor2 .textop4 {
   }
 }
 /* Media queries para pantallas grandes */
-@media only screen and (min-width: 979px) {
+@media only screen and (min-width: 979px) and (max-width: 1400px) {
   body {
     background-color: rgb(238, 233, 226);
+  }
+  nav {
+    text-align: center;
+    font-size: 1.8em;
+  }
+  .navbar a {
+    display: flex;
+    position: relative;
+    top: 50px;
+  }
+  .bienvenida-pagina, .rubro-pagina, .explicacion-titulo, .lista-servicios,
+  .texto1, .texto2, .texto3, .texto4, .texto6, .texto7, .textop, .textop2,
+  .textop3, .textop4, .lista1, .lista2, .lista3, .lista4 {
+    position: relative;
+    top: 30px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
   }
 }
 

@@ -19,6 +19,9 @@
         font-size: small;
         }
     .navbar a {
+        display: flex;
+        position: relative;
+        top:250px;
         font-size: small;
         }
     footer {
@@ -36,12 +39,28 @@
     .bienvenida-pagina, .rubro-pagina, .explicacion-titulo, .lista-servicios,
     .texto1, .texto2, .texto3, .texto4, .texto6, .texto7, .textop, .textop2, 
     .textop3, .textop4, .lista1, .lista2, .lista3, .lista4 {
+        position: relative;
+        top: 10px !important;
         margin-inline-start: 20px;
         margin-inline-end: 20px;
         font-size: 1em !important;
         }
+    .primer-titulo, .segundo-titulo, .tercer-titulo, .cuarto-titulo {
+        position: relative;
+        top: 30px !important;
+        font-size: 1.5em !important;
+        position: relative;
+        top: 30px;
+        }
 
-    .titulo, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6, .titulop {
+    .titulo, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6{
+        position: relative;
+        top: 30px !important;
+        font-size: 1.2em;
+        }
+    .titolop {
+        position: relative;
+        top: 30px !important;
         font-size: 1.2em;
         }
 
@@ -109,6 +128,8 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        font-size: x-small;
+        font-size: 1em;
             p {
                 font-size: 1em;
             }
@@ -132,6 +153,9 @@
         font-size: 1.8em;
         }
     .navbar a {
+        display: flex;
+        position: relative;
+        top: 250px;
         font-size: large;
         }
     footer {
@@ -139,7 +163,7 @@
         background-position: center;
         background-repeat: no-repeat;
         font-size: small;
-        font-size: 1.4em;
+        font-size: 1.2em;
             p {
                 font-size: 1.2em;
                 }
@@ -149,12 +173,16 @@
     .bienvenida-pagina, .rubro-pagina, .explicacion-titulo, .lista-servicios,
     .texto1, .texto2, .texto3, .texto4, .texto6, .texto7, .textop, .textop2, 
     .textop3, .textop4, .lista1, .lista2, .lista3, .lista4 {
+        position:relative;
+        top: 10px !important;
         margin-inline-start: 20px;
         margin-inline-end: 20px;
         font-size: 1.4em !important;
         }
 
     .titulo, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6, .titulop {
+        position: relative;
+        top: 30px !important;
         font-size: 1.8em;
         }
 
@@ -205,9 +233,26 @@
         }
 }
 /* Media queries para pantallas grandes */
-@media only screen and (min-width:979px) {
+@media only screen and (min-width:979px) and (max-width:1400px) {
     body {
         background-color: rgb(238, 233, 226);
+        }
+    nav {
+        text-align: center;
+        font-size: 1.8em;
+        }
+    .navbar a {
+        display: flex;
+        position: relative;
+        top: 50px;
+        }
+    .bienvenida-pagina, .rubro-pagina, .explicacion-titulo, .lista-servicios,
+    .texto1, .texto2, .texto3, .texto4, .texto6, .texto7, .textop, .textop2, 
+    .textop3, .textop4, .lista1, .lista2, .lista3, .lista4 {
+        position:relative;
+        top: 30px;
+        margin-inline-start: 20px;
+        margin-inline-end: 20px;
         }
    
 }

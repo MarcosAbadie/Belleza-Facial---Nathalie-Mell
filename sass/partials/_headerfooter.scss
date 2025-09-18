@@ -13,12 +13,13 @@ header{
 
     nav {
         position: relative;
-        bottom: 30px;
+        bottom: 305px;
         padding: 1px;
         text-align: right;
         font-family: $font;
         font-size: 2em;
     }
+    
         
     nav ul {
         display: inline-flex;
@@ -30,11 +31,13 @@ header{
         text-transform: uppercase;
         }
         
+        
     .navbar a {
         text-decoration: none;
         position: relative;
         bottom: 30px;
         }
+            
     
 }
 footer {
@@ -42,7 +45,8 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 30vh;  
+    height: 20vh;  
     font-family: $rosaoscuro;
     font-size: 1.5em;  
+    
 }

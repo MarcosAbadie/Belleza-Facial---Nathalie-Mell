@@ -46,22 +46,32 @@ main {
     }
     
     .primer-titulo {
+        position: relative;
+        top: 30px;
         text-align: center;
     }
 
     .segundo-titulo {
+        position: relative;
+        top: 30px;
         text-align: center;
     }
 
     .tercer-titulo {
+        position: relative;
+        top: 30px;
         text-align: center;
     }
 
     .cuarto-titulo {
+        position: relative;
+        top: 30px;
         text-align: center;
     }
     
     p {
+        position: relative;
+        top: 30px;
         font-family: $font;
         font-size: 1.5em;
         color: $negro;     
@@ -90,6 +100,8 @@ main {
     }
 
     .explicacion-titulo {
+        position: relative;
+        top: 55px;
         text-align: center;
         margin-inline-start: 250px;
         margin-inline-end: 350px;
@@ -101,6 +113,8 @@ main {
     }
 
     .lista-servicios { 
+        position: relative;
+        top: 30px;
         text-align: center;
         font-family: $font;
         list-style-position: inside;
@@ -157,10 +171,14 @@ main {
             }
        
         .titulo {
+            position: relative;
+            top: 50px;
             grid-area: titulo;
             text-align: center;
             }
         .titulo2 {
+            position: relative;
+            top: 50px;
             grid-area: titulo2;
             text-align: center;
             }
@@ -181,12 +199,18 @@ main {
             text-align: center;
             }
         .foto1 {
+            position: relative; 
+            top: 30px;
             grid-area: foto1;
             }
         .foto2 {
+            position: relative; 
+            top: 30px;
             grid-area: foto2;
             }
         .foto3 {
+            position: relative; 
+            top: 30px;
             grid-area: foto3;   
             }
         .foto4 {
@@ -199,10 +223,14 @@ main {
             grid-area: foto6; 
             }
         .texto1 {
+            position: relative;
+            top: 30px;
             grid-area: texto1;
             font-family: $font;      
             }
         .texto2 {
+            position: relative;
+            top: 30px;
             grid-area: texto2;
             text-align: center;
             font-family: $font;
@@ -212,6 +240,8 @@ main {
             max-width: 800px;
             }
         .texto3 {
+            position: relative;
+            top: 30px;
             grid-area: texto3;
             text-align: center;
             font-family: $font;
@@ -246,6 +276,8 @@ main {
             max-width: 800px;
             }
         .texto7 {
+            position: relative;
+            top: 30px;
             grid-area: texto7;
             text-align: center;
             font-family: $font;
@@ -319,10 +351,7 @@ main {
             border: $fucsia 10px groove;
             border-radius: 50px;        
             }
-        .titolop {
-            grid-area: titulop;
-            text-align: center;
-            }
+        
         .fotop {
             grid-area: fotop;
             }
@@ -335,6 +364,13 @@ main {
         .fotop4 {
             grid-area: fotop4;
             }
+        .titolop {
+            position: relative;
+            top: 50px;
+            grid-area: titulop;
+            text-align: center;
+            }
+        
         .textop {
             grid-area: textop;
             text-align: center;
@@ -372,3 +408,27 @@ main {
             }
    }
 }
+.animacion {
+    border-radius: color $fucsia 10px groove;
+}
+.animacion:hover {
+    .contenedor2 img {
+        border: $fucsia 10px groove;
+        border-radius: 50px;
+        position:relative;
+        animation: zoomIn 3s ease-in-out;   
+        }
+    @keyframes zoomIn {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(2);
+        }
+        100% {
+            transform: scale(1);
+        }   
+    }
+}
+
+  
